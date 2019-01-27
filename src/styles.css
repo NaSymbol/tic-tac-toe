@@ -31,7 +31,12 @@ ol, ul {
   text-align: center;
   width: 34px;
 }
-
+.square:hover{
+  background: lightblue;
+}
+.square-active{
+  background: yellow;
+}
 .square:focus {
   outline: none;
 }
@@ -47,4 +52,11 @@ ol, ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+.titleSection{
+
+}
+.header{
+  
 }

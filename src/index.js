@@ -5,7 +5,7 @@ import "./styles.css";
 
 function Square(props) {
   return (
-    <button className="square" onClick={props.onClick}>
+    <button className= { 1 ? "square" : "square-active"} onClick={props.onClick}>
       {props.value}
     </button>
   );
@@ -85,34 +85,50 @@ class Game extends React.Component {
   }
 
   render() {
+
     const history = this.state.history;
     const current = history[this.state.stepNumber];
     const winner = calculateWinner(current.squares);
 
     const moves = history.map((step, move) => {
-      const desc = move ? "Go to move #" + move : "Go to game start";
+      const desc = move ? "Go to move #" + move + "at" : "Go to game start";
       return (
         <li key={move}>
           <button onClick={() => this.jumpTo(move)}>{desc}</button>
         </li>
       );
+
     });
 
+
+
+    // change this section so that it displays draw when count gets to 11
     let status;
     if (winner) {
       status = "Winner: " + winner;
     } else {
       status = "Next player: " + (this.state.xIsNext ? "X" : "O");
     }
+    //override status to "Draw"
+    if(this.state.stepNumber == 9){
+      status = "Draw";
+    }
+    
 
     return (
       <div className="game">
+      <div className="header">
+      <h1 className="titleSection">Tik Tak Toe</h1>
+      </div>
+
+      <div>
         <div className="game-board">
           <Board squares={current.squares} onClick={i => this.handleClick(i)} />
         </div>
         <div className="game-info">
           <div>{status}</div>
           <ol>{moves}</ol>
+        </div>
         </div>
       </div>
     );
@@ -144,34 +160,3 @@ function calculateWinner(squares) {
 }
 
 
-
-window.addEventListener("mousedown", function(e) {
-  document.body.classList.add("mouse-navigation");
-  document.body.classList.remove("kbd-navigation");
-});
-window.addEventListener("keydown", function(e) {
-  if (e.keyCode === 9) {
-    document.body.classList.add("kbd-navigation");
-    document.body.classList.remove("mouse-navigation");
-  }
-});
-window.addEventListener("click", function(e) {
-  if (e.target.tagName === "A" && e.target.getAttribute("href") === "#") {
-    e.preventDefault();
-  }
-});
-window.onerror = function(message, source, line, col, error) {
-  var text = error
-    ? error.stack || error
-    : message + " (at " + source + ":" + line + ":" + col + ")";
-  errors.textContent += text + "\n";
-  errors.style.display = "";
-};
-console.error = (function(old) {
-  return function error() {
-    errors.textContent +=
-      Array.prototype.slice.call(arguments).join(" ") + "\n";
-    errors.style.display = "";
-    old.apply(this, arguments);
-  };
-})(console.error);
