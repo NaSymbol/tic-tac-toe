@@ -11,6 +11,19 @@ function Square(props) {
   );
 }
 
+/** 
+function Hello(){
+  const rows = 3;
+    let boardDisplay = [];
+    for (let i = 0; i < rows; i++) {
+        boardDisplay.push(0);
+    }
+
+  return(
+    {boardDisplay}
+  );
+}
+**/
 class Board extends React.Component {
   renderSquare(i) {
     return (
@@ -21,13 +34,14 @@ class Board extends React.Component {
     );
   }
 
+
   render() {
+
+
     return (
       <div>
         <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
+
         </div>
         <div className="board-row">
           {this.renderSquare(3)}
