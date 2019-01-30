@@ -1,7 +1,7 @@
 {
-  "name": "tic-tak-toe",
+  "name": "tic-tac-toe",
   "version": "1.0.0",
-  "description": "Simple Tic Tak Toe game",
+  "description": "Simple Tic Tac Toe game",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

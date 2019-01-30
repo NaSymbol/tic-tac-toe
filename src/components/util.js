@@ -1,3 +1,5 @@
+import React from "react";
+
 function calculateWinner(squares) {
     const lines = [
       [0, 1, 2],
@@ -26,6 +28,20 @@ function calculateWinner(squares) {
       </button>
     );
   }
+
+  /** 
+function Hello(){
+  const rows = 3;
+    let boardDisplay = [];
+    for (let i = 0; i < rows; i++) {
+        boardDisplay.push(0);
+    }
+
+  return(
+    {boardDisplay}
+  );
+}
+**/
 
 
   export { 

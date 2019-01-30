@@ -17,22 +17,52 @@ ol, ul {
   margin-bottom: 10px;
 }
 
+.board-section{
+
+  width:240px;
+  margin:0 auto;
+}
+
+@media (min-width: 600px){
+  .board-section{
+width:450px;
+
+  }
+
+}
 .square {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 54px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+
+  /**   **/
+  width: 80px;
+  height: 80px;
+
+  color:white;
+  background-color:lightblue;
+}
+@media (min-width: 600px){
+  .square{
+  font-size: 84px;
+  width: 150px;
+  height: 150px;
+  margin: auto 0;
+  display: block;
+
+  }
+
 }
 .square:hover{
-  background: lightblue;
+  background: #7e9ca7;
 }
 .square-active{
   background: yellow;
@@ -44,11 +74,12 @@ ol, ul {
 .kbd-navigation .square:focus {
   background: #ddd;
 }
-
+/**
 .game {
   display: flex;
   flex-direction: row;
 }
+**/
 
 .game-info {
   margin-left: 20px;
@@ -58,5 +89,9 @@ ol, ul {
 
 }
 .header{
-  
+  background: lightblue;
+color:white;
+display:block;
+clear:both;
+text-align: center;
 }

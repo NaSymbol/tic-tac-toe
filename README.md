@@ -1,4 +1,4 @@
-# Tic Tak Toe Game
+# Tic Tac Toe Game
 
 ### Description
 A variation on the react tutorial tik tak toe game
@@ -13,7 +13,7 @@ A variation on the react tutorial tik tak toe game
 - [] When someone wins, highlight the three squares that caused the win.
 - [x] When no one wins, display a message about the result being a draw.
 - [] add A.I player with random moves.
-- [] style the board
-[] make site responsive
+- [x] style the board
+- [x] make site responsive
 
 npm

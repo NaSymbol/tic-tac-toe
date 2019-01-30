@@ -76,7 +76,7 @@ class Game extends React.Component {
       return (
         <div className="game">
         <div className="header">
-        <h1 className="titleSection">Tik Tak Toe</h1>
+        <h1 className="titleSection">Tik Tac Toe Game</h1>
         </div>
   
         <div>
