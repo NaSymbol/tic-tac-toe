@@ -1,0 +1,21 @@
+
+.board-section{
+
+    width:240px;
+    margin:0 auto;
+  }
+
+
+@media (min-width: 600px){
+    .board-section{
+  width:450px;
+  
+    }
+}
+
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }

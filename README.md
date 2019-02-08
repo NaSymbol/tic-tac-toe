@@ -15,5 +15,8 @@ A variation on the react tutorial tik tak toe game
 - [] add A.I player with random moves.
 - [x] style the board
 - [x] make site responsive
+- [] change x o to new icons
+- [] form for changing icons used
+
 
 npm

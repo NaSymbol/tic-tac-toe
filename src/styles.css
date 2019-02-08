@@ -1,75 +1,26 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  margin: 0px;
 }
 
 ol, ul {
   padding-left: 30px;
 }
+li{
+  margin-bottom:5px;
 
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
 }
+
+
 
 .status {
   margin-bottom: 10px;
 }
 
-.board-section{
 
-  width:240px;
-  margin:0 auto;
-}
 
-@media (min-width: 600px){
-  .board-section{
-width:450px;
 
-  }
 
-}
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 54px;
-  font-weight: bold;
-  line-height: 34px;
-
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-
-  /**   **/
-  width: 80px;
-  height: 80px;
-
-  color:white;
-  background-color:lightblue;
-}
-@media (min-width: 600px){
-  .square{
-  font-size: 84px;
-  width: 150px;
-  height: 150px;
-  margin: auto 0;
-  display: block;
-
-  }
-
-}
-.square:hover{
-  background: #7e9ca7;
-}
-.square-active{
-  background: yellow;
-}
-.square:focus {
-  outline: none;
-}
 
 .kbd-navigation .square:focus {
   background: #ddd;
@@ -86,7 +37,8 @@ width:450px;
 }
 
 .titleSection{
-
+  margin-top:0;
+  margin-bottom:20;
 }
 .header{
   background: lightblue;
@@ -94,4 +46,12 @@ color:white;
 display:block;
 clear:both;
 text-align: center;
+font-size: 12px;
+
+}
+@media (min-width: 600px){
+  .header{
+  font-size: 25px;
+  }
+
 }

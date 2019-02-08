@@ -1,6 +1,10 @@
 import React from "react";
 import Board from "./board.js";
 import {calculateWinner} from './util.js';
+import "./game.css";
+//changing X O to new icons
+//import FaPencil from 'react-icons/lib/fa/pencil'
+//import FaTrash from 'react-icons/lib/fa/trash'
 
 class Game extends React.Component {
     constructor(props) {
@@ -84,7 +88,7 @@ class Game extends React.Component {
             <Board squares={current.squares} onClick={i => this.handleClick(i)} />
           </div>
           <div className="game-info">
-            <div>{status}</div>
+            <div className="game-info-text">{status}</div>
             <ol>{moves}</ol>
           </div>
           </div>

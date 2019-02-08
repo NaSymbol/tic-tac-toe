@@ -1,0 +1,55 @@
+
+
+.square {
+    background: #fff;
+    border: 1px solid rgb(250, 250, 250);
+    float: left;
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 34px;
+  
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+  
+    /**   **/
+    width: 80px;
+    height: 80px;
+  
+    color:white;
+    background-color:lightblue;
+  }
+  @media (min-width: 600px){
+    .square{
+    font-size: 84px;
+    width: 150px;
+    height: 150px;
+    margin: auto 0;
+    display: block;
+  
+    }
+  
+  }
+  .square:hover{
+    background: #7e9ca7;
+  }
+  .square-active{
+    background: yellow;
+  }
+  .square:focus {
+    outline: none;
+  }
+
+
+
+  .game-info-text{
+    font-size:20px;
+    margin-top: 20px;
+  }
+  
+  .game-info-text{
+    font-size: 36px;
+    margin-top: 0;
+  }
+  
